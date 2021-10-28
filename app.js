@@ -17,6 +17,7 @@ var adminRouter = require('./routes/admin')
 var productRouter = require('./routes/product')
 var finalproductRouter = require('./routes/finalproduct')
 var mainpageRouter = require('./routes/mainpage')
+var userDetailsRouter = require('./routes/userdetails')
 var app = express();
 
 // view engine setup
@@ -42,6 +43,7 @@ app.use('/price',priceRouter);
 app.use('/product',productRouter)
 app.use('/finalproduct',finalproductRouter);
 app.use('/mainpage',mainpageRouter)
+app.use('/userdetails',userDetailsRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
